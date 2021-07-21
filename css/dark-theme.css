@@ -110,7 +110,7 @@ body.dark ._left,
 body.dark .nav_right,
 body.dark .fanpage,
 body.dark .post .stt {
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid rgb(150 150 150 / 25%);
 }
 
 body.dark ._left .list_left .list__icons .ic1 #edit2 {
@@ -119,7 +119,7 @@ body.dark ._left .list_left .list__icons .ic1 #edit2 {
 
 /* right main */
 body.dark .nav_right .top_nav {
-    background: rgb(59, 59, 59);
+    background: rgb(59 59 59 / 63%);
 }
 
 body.dark .main_right .nav_right .top_nav .name_sn,
@@ -182,7 +182,7 @@ body.dark .list_friend .list_-friend_ .friend_acp a {
 
 /* mess group */
 body.dark .mess_group {
-    border-top: 1px solid rgb(150, 150, 150);
+    border-top: 1px solid rgb(150 150 150 / 25%);
 }
 
 body.dark .mess_group .mess_group-title {
@@ -203,7 +203,7 @@ body.dark ._left .list_left .list__icons .ic1 #edit2 {
 }
 /* add friend */
 body.dark .addfriend_nav {
-    background: rgb(59, 59, 59);
+    background: rgb(59 59 59 / 63%);
 }
 
 body.dark .addfriend_nav .box_friend h5,
@@ -239,11 +239,11 @@ body.dark .story .list_story #add_str {
 }
 
 body.dark .post {
-    background: rgb(59, 59, 59);
+    background: rgb(59 59 59 / 25%);
 }
 
 body.dark .post .stt div {
-    background: rgb(77, 77, 77);
+    background: rgb(77 77 77 / 40%);
 }
 
 body.dark .post .btn_post .button_list span {
@@ -255,7 +255,7 @@ body.dark .post .btn_post .button_list:hover {
 }
 
 body.dark .bodys {
-    background: rgb(59, 59, 59);
+    background: rgb(59 59 59 / 25%);
 }
 
 body.dark .Posts .list_post-nav .post_nav-title div a,
@@ -283,11 +283,11 @@ body.dark .emoji_post .react {
 }
 
 body.dark .emoji_post {
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid rgb(150 150 150 / 25%);
 }
 
 body.dark .Posts .__react-emj {
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid rgb(150 150 150 / 25%);
 }
 
 body.dark .__react-emj .ws {
@@ -311,7 +311,7 @@ body.dark #click_option option {
 }
 
 body.dark .comment .comment_list .cmt_list--list {
-    background: rgb(77, 77, 77);
+    background: rgb(77 77 77 / 40%);
 }
 
 body.dark .comment .comment_list .cmt_list--list .list--list_icons i:hover {
@@ -319,7 +319,7 @@ body.dark .comment .comment_list .cmt_list--list .list--list_icons i:hover {
 }
 
 body.dark .cmts .cmts_s .title_cmts {
-    background: rgb(77, 77, 77);
+    background: rgb(77 77 77 / 40%);
 }
 
 body.dark .cmts .cmts_s .title_cmts a {

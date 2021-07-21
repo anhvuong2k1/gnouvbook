@@ -1589,7 +1589,7 @@ footer i:hover {
 
 .boder_ {
     position: absolute;
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid rgb(150 150 150 / 25%);
     top: 286px;
     left: 7px;
     width: 95%;
