@@ -1,0 +1,1374 @@
+<!-- 12/07/2021 start code by Vuong -->
+<!-- Chuyện là nghỉ dịch ở nhà chán quá mà tren Facebook up ảnh hong ai lai cả, 
+thôi thì Vương đành lành mẹ nó cái Facebook "Fake" này ra để tự sướng bản thân :)) 
+web mang tên "Gnouvbook" đc lấy từ tên Vương viết ngược nhé =)), -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Hồ Ngọc Anh Vương">
+    <meta name="keywords" content="gnouvbook, gnou, gnouv, gn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnouvbook</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/dark-theme.css">
+    <link rel="stylesheet" href="./css/AnimationEmoji.css">
+    <link href="/img/logo/logo4.png" rel="shortcut icon" type="image/x-icon" style="border-radius: 50%;">
+    <link rel="stylesheet" href="/icons/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./icons/FontRoboto/LICENSE.txt">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <nav class="header_nav">
+        <!-- logo -->
+        <div class="logo">
+            <a href="#"><img src="./img/logo/Logo.jpg" alt=""></a>
+        </div>
+        
+        <!-- search -->
+        <div class="search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Tìm kiếm trong Gnouvbook">
+        </div>
+
+        <!-- list menu -->
+        <ul class="menu">
+            <li>
+                <i class="fas fa-home"></i>
+                <span class="wait noti_menu">+99</span>
+            </li>
+            <li>
+                <i class="fas fa-tv"></i>
+                <span class="wait noti_menu">+26</span>
+            </li>
+            <li>
+                <i class="fas fa-store"></i>
+                <span class="wait noti_menu">+3</span>
+            </li>
+            <li>
+                <i class="fas fa-users"></i>
+                <span class="wait noti_menu">+17</span>
+            </li>
+            <li>
+                <i class="fas fa-headset"></i>
+                <span class="wait noti_menu">+5</span>
+            </li>
+        </ul>
+        
+        <!-- account -->
+        <div class="profile">
+            <!-- link acc -->
+            <a href="#" class="account">
+                <img src="./img/avt/avatar.jpg" alt="">
+                <span class="name">Anh Vương</span>
+            </a>
+            
+            <!-- tab list menu -->
+            <ul class="tab">
+                <!-- mess -->
+                <li class="list_tab1">
+    
+                    <i class="fab fa-facebook-messenger"></i>
+                    <span class="wait noti_noti">24</span>
+                    <div class="messenger">
+                        <!-- nav mess -->
+                        <div class="nav_mess">
+                            <p><b>Messenger</b></p>
+                            <div class="mess_option">
+                                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                <a href="#"><i class="fas fa-expand"></i></a>
+                                <a href="#"><i class="fas fa-edit"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- search mess -->
+                        <div class="search_mess">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Tìm kiếm trong Messenger">
+                        </div>
+
+                        <!-- mess chờ -->
+                        <button class="wait_mess">
+                            <i class="fas fa-comments"></i>
+                            <div class="_noti-wait">
+                                <p>Tin nhắn đang chờ mới</p>
+                                <span class="waitting">Từ <b>Hoa Vinh</b> và +99 người khác</span>
+                            </div>
+                            <i id= "next_mess-wait" class="fas fa-angle-right"></i>
+                        </button>
+
+                        <!-- list mess -->
+                        <ul class="list_mess">
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· 1 phút trước</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· 30 phút trước</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· 1 giờ trước</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· 3 giờ trước</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· 10 giờ trước</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· hôm qua</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· hôm qua</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· hôm qua</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· hôm qua</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list_mess-li">
+                                <a href="#" class="list_mess-li_a">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="name_mess">
+                                        <p class="name_mess-p"><b>Đoàn Ngọc Nhi</b></p>
+                                        <span class="name_mess-span">Nhi mập djt</span>
+                                        <span class="time_mess">· hôm qua</span>
+                                        <i id="mess_check" class="fas fa-check-circle"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- Noti -->
+                <li class="list_tab2">
+                    <i class="fas fa-bell"></i>
+                    <div class="noti1">
+                        <p class="p1">Thông Báo</p>
+
+                        <div class="n1">
+                            <p class="n1-1">Mới</p>
+                            <a class="n1-2" href="#">Xem tất cả</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti">Anh Vương và 13.368 người khác đã thích bài viết của bạn...</span>
+                                        <span class="time_noti">Vài giây trước</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti">Anh Vương và 13.368 người khác đã thích bài viết của bạn...</span>
+                                        <span class="time_noti">Vài giây trước</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti">Anh Vương và 13.368 người khác đã thích bài viết của bạn...</span>
+                                        <span class="time_noti">Vài giây trước</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti">Anh Vương và 13.368 người khác đã thích bài viết của bạn...</span>
+                                        <span class="time_noti">Vài giây trước</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <div class=" n1 n2">
+                            <p class="n1-1">Lời mời kết bạn</p>
+                            <a class="n1-2" href="#">Xem tất cả</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti"><b>Ngọc Nhi</b> đã gửi cho bạn lời mời kết bạn.</span>
+                                        <span class="time_noti">Vài phút trước</span>
+                                    </div>
+                                </a>
+                                <button class="btn -btn">Xác Nhận</button>
+                                <button class="btn _btn">Xóa</button>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti"><b>Khánh Linh</b> đã gửi cho bạn lời mời kết bạn.</span>
+                                        <span class="time_noti">3 ngày trước</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="n1 n3">
+                            <p class="n1-1">Trước đó</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti"><b>Khánh Linh</b> đã gửi cho bạn lời mời kết bạn.</span>
+                                        <span class="time_noti"> Khoảng 3 giờ trước</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti"><b>Khánh Linh</b> đã gửi cho bạn lời mời kết bạn.</span>
+                                        <span class="time_noti">Khoảng 4 giờ trướcc</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti"><b>Khánh Linh</b> đã gửi cho bạn lời mời kết bạn.</span>
+                                        <span class="time_noti">Khoảng 6 giờ trước</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="./img/noti/noti1.jpg" alt="">
+                                    <div class="span_noti">
+                                        <span class="list_noti"><b>Khánh Linh</b> đã gửi cho bạn lời mời kết bạn.</span>
+                                        <span class="time_noti">Khoảng 8 giờ trước</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="wait noti_noti">+99</span>
+                </li>
+                
+                <!-- all setting -->
+                <li class="list_tab3">
+                    <i class="fas fa-sort-down"></i>
+                    <div class="setting">
+                        <!-- profile -->
+                        <a href="#" class="setting_profile">
+                            <img src="./img/avt/avatar.jpg" alt="avt">
+                            <div class="setting_profile--">
+                                <p>
+                                    <b class="name-setting">Hồ Ngọc Anh Vương</b>
+                                    <i id= "verifi" class="fas fa-check-circle"></i>
+                                </p>
+                                <span>Xem trang cá nhân của bạn</span>
+                            </div>
+                        </a>
+
+                        <hr class="hr"> <!-- Ngan cach-->
+
+                        <!-- feedback -->
+                        <a class="feedback" href="#">
+                            <i id="icon_fb" class="far fa-comment-alt"></i>
+                            <div class="fb_">
+                                <p class="help-setting">Đóng góp ý kiến</p>
+                                <span class="fb_span">Góp phần cải thiện phiên bản Gnouvbook mới.</span>
+                            </div>
+                        </a>
+
+                        <hr class="hr hr_fb"> <!-- Ngan cach-->
+                        
+                        <!-- list setting -->
+
+                        <!-- chuyen tai khoan -->
+                        <a href="#" class="list_setting">
+                            <img src="./img/avt/avatar.jpg" alt="">
+                            <p>Chuyển tài khoản</p>
+                            <i id= "next" class="fas fa-angle-right"></i>
+                            <span class="wait noti_acc">+22</span>
+                        </a>
+
+                        <!-- cai dat -->
+                        <a href="#" class="__1 list_setting">
+                            <i id="icons" class="fas fa-cog"></i>
+                            <p class="-_1">Cài đặt & quyền riêng tư </p>
+                            <i id= "next" class="fas fa-angle-right"></i>
+                        </a>
+
+                        <!-- tro giup -->
+                        <a href="#" class="__2 list_setting">
+                            <i id="icons" class="fas fa-question-circle"></i>
+                            <p class="-_1">Trợ giúp & hỗ trợ</p>
+                            <i id= "next" class="fas fa-angle-right"></i>
+                        </a>
+
+                        <!-- man hinh -->
+                        <a href="#" class="__3 list_setting">
+                            <i id="icons" class="fas fa-moon"></i>
+                            <p class="-_1">Màn hình</p>
+                            <div>
+                                <input type="checkbox" class="checkbox" id="checkbox">
+                                <label for="checkbox" class="Lable">
+                                    <i class="fas Moon fa-moon"></i>
+                                    <i class="fas fa-sun"></i>
+                                    <div class="ball"></div>
+                                </label>
+                            </div>
+                            <i id= "next" class="fas fa-angle-right"></i>
+                        </a>
+
+                        <!-- out -->
+                        <a href="#" class="__4 list_setting">
+                            <i id="icons" class="fas fa-sign-out-alt"></i>
+                            <p class="-_1">Đăng xuất</p>
+                        </a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+    </nav>
+    <!-- main -->
+    <main class="grid container">
+        <!-- left -->
+        <div class="main_left">
+            <!-- nav left -->
+            <div class="_left">
+                <ul class="list_left">
+                    <!-- profile -->
+                    <li class="list__icons">
+                        <a class="ic1" href="#">
+                            <img src="./img/avt/avatar.jpg" alt="">
+                            Hồ Ngọc Anh Vương
+                            <i id="verifi" class="fas fa-check-circle"></i>
+                        </a>
+                    </li>
+                    <!-- friend -->
+                    <li class="list__icons">
+                        <a class="ic1" href="#">
+                            <i id="color_5" class="fas fa-user-friends"></i>
+                            <div>
+                                <p>Bạn bè</p>
+                                <span>• 99+ lời mời mới</span>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- save -->
+                    <li class="list__icons">
+                        <a class="ic1" href="#">
+                            <i id="edit1" class="fas fa-bookmark color_4"></i>
+                            <div>
+                                <p>Đã lưu</p>
+                                <span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- fanpage -->
+                    <li class="list__icons">
+                        <a class="ic1" href="#">
+                            <i id="color_6" class="fas fa-flag"></i>
+                            <div>
+                                <p>Trang</p>
+                                <span>• 12+ trang mới</span>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- group -->
+                    <li class="list__icons">
+                        <a class="ic1" href="#">
+                            <i id="color_7" class="fas fa-users"></i>
+                            <div>
+                                <p>Nhóm</p>
+                                <span>• 8+ nhóm mới</span>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- more -->
+                    <li class="list__icons">
+                        <a class="ic1" href="#">
+                            <i id="edit2" class="fas fa-angle-down"></i>
+                            Xem thêm
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- footer left -->
+            <div class="left_ft">
+                <!-- nav ft -->
+                <div>
+                    <h1>Lối tắt của bạn</h1>
+                    <button>Chỉnh sửa</button>
+                </div>
+
+                <!-- ft ft -->
+                <ul class="footer_left">
+                    <!-- list start yellow -->
+                    <li class="list_footer-left">
+                        <img src="./img/noti/noti1.jpg" alt="">
+                        <p>Lớp thầy ba</p>
+                    </li>
+
+                    <li class="list_footer-left">
+                        <img src="./img/noti/noti1.jpg" alt="">
+                        <p>Lớp thầy ba</p>
+                    </li>
+
+                    <li class="list_footer-left">
+                        <img src="./img/noti/noti1.jpg" alt="">
+                        <p>Lớp thầy ba</p>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- support -->
+            <div class="sp"> 
+                <a class="sup" href="#">Quyền riêng tư</a>
+                <a class="sup" href="#">• Điêu khoản</a>
+                <a class="sup" href="#">• Quảng cáo</a>
+                <a class="sup" href="#">• Lựa chọn quảng cáo</a>
+                <a class="sup" href="#">• Cookie</a>
+                <a class="sup" href="#">• Xem thêm</a>
+                <a class="sup" href="#">• Gnouvbook • © 2021 </a>
+            </div>
+
+        </div>
+
+        <!-- mid -->
+        <div class="main_mid">
+            <!-- story -->
+            <div class="story">
+                <a class="list_story str0" href="#">
+                    <i id="add_str" class="fas fa-plus-circle"></i>
+                    <p class="add__1">Tạo tin</p>
+                </a>
+
+                <a class="list_story str1" href="#">
+                    <img class="str" src="./img/noti/noti1.jpg" alt="">
+                    <p class="name_str">Ngọc Nhi</p>
+                </a>
+
+                <a class="list_story str2" href="#">
+                    <img class="str" src="./img/list_friend/quyentran.jpg" alt="">
+                    <p class="name_str">Quyên Trần</p>
+                </a>
+
+                <a class="list_story str3" href="#">
+                    <img class="str" src="./img/list_friend/ngocmy.jpg" alt="">
+                    <p class="name_str">Đặng Nguyên Ngọc Mỹ</p>
+                </a>
+
+                <a class="list_story str4" href="#">
+                    <img class="str" src="./img/list_friend/khanhhuyen.jpg" alt="">
+                    <p class="name_str">Lê Khánh Huyền</p>
+                </a>
+
+                <a class="list_story str5" href="#">
+                    <img class="str" src="./img/list_friend/tranthuhien.jpg" alt="">
+                    <p class="name_str">Trần Thu Hiền</p>
+                </a>
+            </div>
+            <div class="next_story">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <!-- post -->
+            <div class="post">
+                <!-- stt post -->
+                <div class="stt">
+                    <img src="./img/avt/avatar.jpg" alt="">
+                    <div>
+                        <input class="text_stt" type="text" placeholder="Anh Vương ơi, bạn đang nghĩ gì thế?">
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="btn_post">
+                    <button class="button_list btn__0">
+                        <i id="color1" class="fas fa-video"></i>
+                        <span><b>Videp trực tiếp</b></span>
+                    </button>
+                    <button class="button_list btn__1">
+                        <i id="color2" class="fas fa-images"></i>
+                        <input type="file" class="file">
+                        <label for="file"class="pic"><span><b>Ảnh/Video</b></span></label>
+                    </button>
+                    <button class="button_list btn__2">
+                        <i id="color3" class="fas fa-laugh"></i>
+                        <span><b>Cảm xúc/Hoạt động</b></span>
+                    </button>
+                </div>
+            </div>
+            <!-- body mid -->
+            <!-- chứa all nội dung -->
+            <ul class="body_mid">
+
+                <!-- bài viết thường -->
+                <li class="bodys Posts posts_normal">
+
+                    <!-- nav -->
+                    <div class="list_post-nav">
+                        <img src="./img/logo/Logo.jpg" alt="avt">
+
+                        <div class="post_nav-title">
+                            <div>
+                                <a href="#">Gnouvbook</a>
+                                <i id="verifi" class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <span>1 giờ •</span>
+                                <i id="earch_post" class="fas fa-globe-asia"></i>
+                            </div>
+                        </div>
+
+                        <i id="other" class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <p class="stt_title-posts">Chào Mừng đến mới Gnouvbook!</p>
+                    <!-- mid img -->
+                    <a href="#" class="img_post-mid">
+                        <img src="./img/logo/Logo.jpg" alt="">
+                    </a>
+                    <!-- emoji of react -->
+                    <div class="emoji_post">
+                        <div class="emoji__list">
+                            <img class="og" id="sad" height="23" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='10.25%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FEEA70'/%3e%3cstop offset='100%25' stop-color='%23F69B30'/%3e%3c/linearGradient%3e%3clinearGradient id='d' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23472315'/%3e%3cstop offset='100%25' stop-color='%238B3A0E'/%3e%3c/linearGradient%3e%3clinearGradient id='e' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23191A33'/%3e%3cstop offset='87.162%25' stop-color='%233B426A'/%3e%3c/linearGradient%3e%3clinearGradient id='h' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23E78E0D'/%3e%3cstop offset='100%25' stop-color='%23CB6000'/%3e%3c/linearGradient%3e%3clinearGradient id='i' x1='50%25' x2='50%25' y1='81.899%25' y2='17.94%25'%3e%3cstop offset='0%25' stop-color='%2335CAFC'/%3e%3cstop offset='100%25' stop-color='%23007EDB'/%3e%3c/linearGradient%3e%3clinearGradient id='j' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%236AE1FF' stop-opacity='.287'/%3e%3cstop offset='100%25' stop-color='%23A8E3FF' stop-opacity='.799'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.921365489 0 0 0 0 0.460682745 0 0 0 0 0 0 0 0 0.35 0'/%3e%3c/filter%3e%3cfilter id='g' width='111.4%25' height='137.5%25' x='-5.7%25' y='-18.8%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='.5'/%3e%3cfeOffset in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.0411226772 0 0 0 0 0.0430885485 0 0 0 0 0.0922353316 0 0 0 0.819684222 0'/%3e%3c/filter%3e%3cpath id='b' d='M16 8A8 8 0 110 8a8 8 0 0116 0'/%3e%3cpath id='f' d='M3.599 8.8c0-.81.509-1.466 1.134-1.466.627 0 1.134.656 1.134 1.466 0 .338-.089.65-.238.898a.492.492 0 01-.301.225c-.14.037-.353.077-.595.077-.243 0-.453-.04-.595-.077a.49.49 0 01-.3-.225 1.741 1.741 0 01-.239-.898zm6.534 0c0-.81.508-1.466 1.133-1.466.627 0 1.134.656 1.134 1.466 0 .338-.089.65-.238.898a.49.49 0 01-.301.225 2.371 2.371 0 01-1.189 0 .49.49 0 01-.301-.225 1.74 1.74 0 01-.238-.898z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='url(%23d)' d='M5.333 12.765c0 .137.094.235.25.235.351 0 .836-.625 2.417-.625s2.067.625 2.417.625c.156 0 .25-.098.25-.235C10.667 12.368 9.828 11 8 11c-1.828 0-2.667 1.368-2.667 1.765'/%3e%3cuse fill='url(%23e)' xlink:href='%23f'/%3e%3cuse fill='black' filter='url(%23g)' xlink:href='%23f'/%3e%3cpath fill='%234E506A' d='M4.616 7.986c.128.125.136.372.017.551-.12.178-.32.222-.448.096-.128-.125-.135-.372-.017-.55.12-.179.32-.222.448-.097zm6.489 0c.128.125.136.372.018.551-.12.178-.32.222-.45.096-.127-.125-.134-.372-.015-.55.119-.179.319-.222.447-.097z'/%3e%3cpath fill='url(%23h)' d='M4.157 5.153c.332-.153.596-.219.801-.219.277 0 .451.119.55.306.175.329.096.401-.198.459-1.106.224-2.217.942-2.699 1.39-.301.28-.589-.03-.436-.274.154-.244.774-1.105 1.982-1.662zm6.335.087c.099-.187.273-.306.55-.306.206 0 .469.066.801.219 1.208.557 1.828 1.418 1.981 1.662.153.244-.134.554-.435.274-.483-.448-1.593-1.166-2.7-1.39-.294-.058-.371-.13-.197-.459z'/%3e%3cpath fill='url(%23i)' d='M13.5 16c-.828 0-1.5-.748-1.5-1.671 0-.922.356-1.545.643-2.147.598-1.258.716-1.432.857-1.432.141 0 .259.174.857 1.432.287.602.643 1.225.643 2.147 0 .923-.672 1.671-1.5 1.671'/%3e%3cpath fill='url(%23j)' d='M13.5 13.606c-.328 0-.594-.296-.594-.66 0-.366.141-.613.255-.852.236-.498.283-.566.339-.566.056 0 .103.068.339.566.114.24.255.486.255.851s-.266.661-.594.661'/%3e%3c/g%3e%3c/svg%3e" width="23">
+                            <img class="og" id="haha" height="23" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='10.25%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FEEA70'/%3e%3cstop offset='100%25' stop-color='%23F69B30'/%3e%3c/linearGradient%3e%3clinearGradient id='d' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23472315'/%3e%3cstop offset='100%25' stop-color='%238B3A0E'/%3e%3c/linearGradient%3e%3clinearGradient id='e' x1='50%25' x2='50%25' y1='0%25' y2='81.902%25'%3e%3cstop offset='0%25' stop-color='%23FC607C'/%3e%3cstop offset='100%25' stop-color='%23D91F3A'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.921365489 0 0 0 0 0.460682745 0 0 0 0 0 0 0 0 0.35 0'/%3e%3c/filter%3e%3cpath id='b' d='M16 8A8 8 0 110 8a8 8 0 0116 0'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='url(%23d)' d='M3 8.008C3 10.023 4.006 14 8 14c3.993 0 5-3.977 5-5.992C13 7.849 11.39 7 8 7c-3.39 0-5 .849-5 1.008'/%3e%3cpath fill='url(%23e)' d='M4.541 12.5c.804.995 1.907 1.5 3.469 1.5 1.563 0 2.655-.505 3.459-1.5-.551-.588-1.599-1.5-3.459-1.5s-2.917.912-3.469 1.5'/%3e%3cpath fill='%232A3755' d='M6.213 4.144c.263.188.502.455.41.788-.071.254-.194.369-.422.371-.78.011-1.708.255-2.506.612-.065.029-.197.088-.332.085-.124-.003-.251-.058-.327-.237-.067-.157-.073-.388.276-.598.545-.33 1.257-.48 1.909-.604a7.077 7.077 0 00-1.315-.768c-.427-.194-.38-.457-.323-.6.127-.317.609-.196 1.078.026a9 9 0 011.552.925zm3.577 0a8.953 8.953 0 011.55-.925c.47-.222.95-.343 1.078-.026.057.143.104.406-.323.6a7.029 7.029 0 00-1.313.768c.65.123 1.363.274 1.907.604.349.21.342.44.276.598-.077.18-.203.234-.327.237-.135.003-.267-.056-.332-.085-.797-.357-1.725-.6-2.504-.612-.228-.002-.351-.117-.422-.37-.091-.333.147-.6.41-.788z'/%3e%3c/g%3e%3c/svg%3e" width="23">
+                            <img class="og" id="likes" height="23" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e" width="23">
+                        </div>
+                        <p class="react like">749,8K</p>
+                        <p class="react cmt">571,3K câu trả lời</p>
+                        <p class="react share">392,7k lượt chia sẻ</p>
+                    </div>
+                    <!-- react -->
+                    <div class="__react-emj">
+                        <button class="btn ws">
+                            <i class="far fa-thumbs-up">
+                            </i>
+                            Thích
+                            <ul class="animationEmoji">
+                                <!-- like -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--like">
+                                        <div class="emoji__hand">
+                                            <div class="emoji__thumb"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- love -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--love">
+                                        <div class="emoji__heart"></div>
+                                    </div>
+                                </li>
+                                <!-- haha -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--haha">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyes"></div>
+                                            <div class="emoji__mouth">
+                                                <div class="emoji__tongue"></div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <!-- thuong -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--yay">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyebrows"></div>
+                                            <div class="emoji__mouth"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- wow -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--wow">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyebrows"></div>
+                                            <div class="emoji__eyes"></div>
+                                            <div class="emoji__mouth"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- buon -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--sad">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyebrows"></div>
+                                            <div class="emoji__eyes"></div>
+                                            <div class="emoji__mouth"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- phan no -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--angry">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyebrows"></div>
+                                            <div class="emoji__eyes"></div>
+                                            <div class="emoji__mouth"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </button>
+                        <button class="btn ws">
+                            <i class="far fa-comments"></i>
+                            Trả lời
+                        </button>
+                        <button class="btn ws">
+                            <i class="far fa-share-square"></i>
+                            Chia sẻ
+                        </button>
+                    </div>
+                    <!-- input cmt -->
+                    <!-- // -->
+                    <select name="" id="click_option">
+                        <option value="">Bình luận liên quan nhất</option>
+                        <option value="">Bình luận gần đầy nhất</option>
+                        <option value="">tất cả câu trả lời</option>
+                    </select>
+                    <!-- /selec cmt/ -->
+                    <div class="comment">
+                        <div class="comment_list">
+                            <img src="./img/avt/avatar.jpg" alt="">
+                            <div class="cmt_list--list">
+                                <input type="text" placeholder="Viết bình luận...">
+                                <div class="list--list_icons">
+                                    <i class="fas fa-smile"></i>
+                                    <i class="fas fa-camera"></i>
+                                    <i class="fas fa-closed-captioning"></i>
+                                    <i class="fas fa-sticky-note"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /more cmt/ -->
+                    <div class="cmts">
+                        <div class="cmts_s">
+                            <a class="avttt" href="#"><img src="./img/noti/noti1.jpg" alt=""></a>
+                            <div class="title_cmts">
+                                <a href="#">Đoàn Ngọc Nhi
+                                    <i id="-_-" class="fas fa-ellipsis-h"></i>
+                                </a>
+                                <span> <3</span>
+                            </div>
+                        </div>
+                        <div class="cmts_e"> 
+                            <button class="btn_cmts">Thích
+                                <ul class="animationEmoji">
+                                    <!-- like -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--like">
+                                            <div class="emoji__hand">
+                                                <div class="emoji__thumb"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- love -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--love">
+                                            <div class="emoji__heart"></div>
+                                        </div>
+                                    </li>
+                                    <!-- haha -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--haha">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth">
+                                                    <div class="emoji__tongue"></div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </li>
+                                    <!-- thuong -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--yay">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- wow -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--wow">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- buon -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--sad">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- phan no -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--angry">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </button>
+                            <button class="btn_cmts">Trả Lời</button>
+                            <span>16 giờ</span>
+                        </div>
+                    </div>
+                    <!-- /footer comt/ -->
+                    <div class="ft_cmt">
+                        <button class="cmt_ft--cmt">Xem thêm bình luận</button>
+                        <span>156,3K/571,3K</span>
+                    </div>
+
+                </li>
+                <!-- Ảnh đại diện -->
+                <li class="bodys Posts posts_avt">
+
+                    <!-- nav -->
+                    <div class="list_post-nav">
+                        <img src="./img/avt/avatar.jpg" alt="avt">
+
+                        <div class="post_nav-title">
+                            <div>
+                                <a href="#">Hồ Ngọc Anh Vương</a>
+                                <i id="verifi" class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <span> 30 phút trước •</span>
+                                <i id="earch_post" class="fas fa-globe-asia"></i>
+                            </div>
+                        </div>
+
+                        <i id="other" class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <p class="stt_title-posts">Vương đẹp trai okela :))</p>
+                    <span class="tit_tle">đã cập nhật ảnh đại diện của anh ấy!</span>
+                    <!-- mid img -->
+                    <a href="#" class="img_post-mid">
+                        <img class= "AVATAR" src="./img/avt/avatar.jpg" alt="">
+                    </a>
+                    <!-- emoji of react -->
+                    <div class="emoji_post">
+                        <div class="emoji__list">
+                            <img class="og" id="sad" height="23" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='10.25%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FEEA70'/%3e%3cstop offset='100%25' stop-color='%23F69B30'/%3e%3c/linearGradient%3e%3clinearGradient id='d' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23472315'/%3e%3cstop offset='100%25' stop-color='%238B3A0E'/%3e%3c/linearGradient%3e%3clinearGradient id='e' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23191A33'/%3e%3cstop offset='87.162%25' stop-color='%233B426A'/%3e%3c/linearGradient%3e%3clinearGradient id='h' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23E78E0D'/%3e%3cstop offset='100%25' stop-color='%23CB6000'/%3e%3c/linearGradient%3e%3clinearGradient id='i' x1='50%25' x2='50%25' y1='81.899%25' y2='17.94%25'%3e%3cstop offset='0%25' stop-color='%2335CAFC'/%3e%3cstop offset='100%25' stop-color='%23007EDB'/%3e%3c/linearGradient%3e%3clinearGradient id='j' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%236AE1FF' stop-opacity='.287'/%3e%3cstop offset='100%25' stop-color='%23A8E3FF' stop-opacity='.799'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.921365489 0 0 0 0 0.460682745 0 0 0 0 0 0 0 0 0.35 0'/%3e%3c/filter%3e%3cfilter id='g' width='111.4%25' height='137.5%25' x='-5.7%25' y='-18.8%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='.5'/%3e%3cfeOffset in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.0411226772 0 0 0 0 0.0430885485 0 0 0 0 0.0922353316 0 0 0 0.819684222 0'/%3e%3c/filter%3e%3cpath id='b' d='M16 8A8 8 0 110 8a8 8 0 0116 0'/%3e%3cpath id='f' d='M3.599 8.8c0-.81.509-1.466 1.134-1.466.627 0 1.134.656 1.134 1.466 0 .338-.089.65-.238.898a.492.492 0 01-.301.225c-.14.037-.353.077-.595.077-.243 0-.453-.04-.595-.077a.49.49 0 01-.3-.225 1.741 1.741 0 01-.239-.898zm6.534 0c0-.81.508-1.466 1.133-1.466.627 0 1.134.656 1.134 1.466 0 .338-.089.65-.238.898a.49.49 0 01-.301.225 2.371 2.371 0 01-1.189 0 .49.49 0 01-.301-.225 1.74 1.74 0 01-.238-.898z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='url(%23d)' d='M5.333 12.765c0 .137.094.235.25.235.351 0 .836-.625 2.417-.625s2.067.625 2.417.625c.156 0 .25-.098.25-.235C10.667 12.368 9.828 11 8 11c-1.828 0-2.667 1.368-2.667 1.765'/%3e%3cuse fill='url(%23e)' xlink:href='%23f'/%3e%3cuse fill='black' filter='url(%23g)' xlink:href='%23f'/%3e%3cpath fill='%234E506A' d='M4.616 7.986c.128.125.136.372.017.551-.12.178-.32.222-.448.096-.128-.125-.135-.372-.017-.55.12-.179.32-.222.448-.097zm6.489 0c.128.125.136.372.018.551-.12.178-.32.222-.45.096-.127-.125-.134-.372-.015-.55.119-.179.319-.222.447-.097z'/%3e%3cpath fill='url(%23h)' d='M4.157 5.153c.332-.153.596-.219.801-.219.277 0 .451.119.55.306.175.329.096.401-.198.459-1.106.224-2.217.942-2.699 1.39-.301.28-.589-.03-.436-.274.154-.244.774-1.105 1.982-1.662zm6.335.087c.099-.187.273-.306.55-.306.206 0 .469.066.801.219 1.208.557 1.828 1.418 1.981 1.662.153.244-.134.554-.435.274-.483-.448-1.593-1.166-2.7-1.39-.294-.058-.371-.13-.197-.459z'/%3e%3cpath fill='url(%23i)' d='M13.5 16c-.828 0-1.5-.748-1.5-1.671 0-.922.356-1.545.643-2.147.598-1.258.716-1.432.857-1.432.141 0 .259.174.857 1.432.287.602.643 1.225.643 2.147 0 .923-.672 1.671-1.5 1.671'/%3e%3cpath fill='url(%23j)' d='M13.5 13.606c-.328 0-.594-.296-.594-.66 0-.366.141-.613.255-.852.236-.498.283-.566.339-.566.056 0 .103.068.339.566.114.24.255.486.255.851s-.266.661-.594.661'/%3e%3c/g%3e%3c/svg%3e" width="23">
+                            <img class="og" id="haha" height="23" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='10.25%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23FEEA70'/%3e%3cstop offset='100%25' stop-color='%23F69B30'/%3e%3c/linearGradient%3e%3clinearGradient id='d' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%23472315'/%3e%3cstop offset='100%25' stop-color='%238B3A0E'/%3e%3c/linearGradient%3e%3clinearGradient id='e' x1='50%25' x2='50%25' y1='0%25' y2='81.902%25'%3e%3cstop offset='0%25' stop-color='%23FC607C'/%3e%3cstop offset='100%25' stop-color='%23D91F3A'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0.921365489 0 0 0 0 0.460682745 0 0 0 0 0 0 0 0 0.35 0'/%3e%3c/filter%3e%3cpath id='b' d='M16 8A8 8 0 110 8a8 8 0 0116 0'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='url(%23d)' d='M3 8.008C3 10.023 4.006 14 8 14c3.993 0 5-3.977 5-5.992C13 7.849 11.39 7 8 7c-3.39 0-5 .849-5 1.008'/%3e%3cpath fill='url(%23e)' d='M4.541 12.5c.804.995 1.907 1.5 3.469 1.5 1.563 0 2.655-.505 3.459-1.5-.551-.588-1.599-1.5-3.459-1.5s-2.917.912-3.469 1.5'/%3e%3cpath fill='%232A3755' d='M6.213 4.144c.263.188.502.455.41.788-.071.254-.194.369-.422.371-.78.011-1.708.255-2.506.612-.065.029-.197.088-.332.085-.124-.003-.251-.058-.327-.237-.067-.157-.073-.388.276-.598.545-.33 1.257-.48 1.909-.604a7.077 7.077 0 00-1.315-.768c-.427-.194-.38-.457-.323-.6.127-.317.609-.196 1.078.026a9 9 0 011.552.925zm3.577 0a8.953 8.953 0 011.55-.925c.47-.222.95-.343 1.078-.026.057.143.104.406-.323.6a7.029 7.029 0 00-1.313.768c.65.123 1.363.274 1.907.604.349.21.342.44.276.598-.077.18-.203.234-.327.237-.135.003-.267-.056-.332-.085-.797-.357-1.725-.6-2.504-.612-.228-.002-.351-.117-.422-.37-.091-.333.147-.6.41-.788z'/%3e%3c/g%3e%3c/svg%3e" width="23">
+                            <img class="og" id="likes" height="23" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e" width="23">
+                        </div>
+                        <p class="react like">979,8K</p>
+                        <p class="react cmt">631,1K câu trả lời</p>
+                        <p class="react share">492,4k lượt chia sẻ</p>
+                    </div>
+                    <!-- react -->
+                    <div class="__react-emj">
+                        <button class="btn ws">
+                            <i class="far fa-thumbs-up">
+                            </i>
+                            Thích
+                            <ul class="animationEmoji">
+                                <!-- like -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--like">
+                                        <div class="emoji__hand">
+                                            <div class="emoji__thumb"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- love -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--love">
+                                        <div class="emoji__heart"></div>
+                                    </div>
+                                </li>
+                                <!-- haha -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--haha">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyes"></div>
+                                            <div class="emoji__mouth">
+                                                <div class="emoji__tongue"></div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <!-- thuong -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--yay">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyebrows"></div>
+                                            <div class="emoji__mouth"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- wow -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--wow">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyebrows"></div>
+                                            <div class="emoji__eyes"></div>
+                                            <div class="emoji__mouth"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- buon -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--sad">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyebrows"></div>
+                                            <div class="emoji__eyes"></div>
+                                            <div class="emoji__mouth"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- phan no -->
+                                <li class="list_aniEmoji">
+                                    <div class="Emojis  emoji--angry">
+                                        <div class="emoji__face">
+                                            <div class="emoji__eyebrows"></div>
+                                            <div class="emoji__eyes"></div>
+                                            <div class="emoji__mouth"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </button>
+                        <button class="btn ws">
+                            <i class="far fa-comments"></i>
+                            Trả lời
+                        </button>
+                        <button class="btn ws">
+                            <i class="far fa-share-square"></i>
+                            Chia sẻ
+                        </button>
+                    </div>
+                    <!-- input cmt -->
+                    <!-- // -->
+                    <select name="" id="click_option">
+                        <option value="">Bình luận liên quan nhất</option>
+                        <option value="">Bình luận gần đầy nhất</option>
+                        <option value="">tất cả câu trả lời</option>
+                    </select>
+                    <!-- /selec cmt/ -->
+                    <div class="comment">
+                        <div class="comment_list">
+                            <img src="./img/avt/avatar.jpg" alt="">
+                            <div class="cmt_list--list">
+                                <input type="text" placeholder="Viết bình luận...">
+                                <div class="list--list_icons">
+                                    <i class="fas fa-smile"></i>
+                                    <i class="fas fa-camera"></i>
+                                    <i class="fas fa-closed-captioning"></i>
+                                    <i class="fas fa-sticky-note"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /more cmt/ -->
+                    <div class="cmts">
+                        <div class="cmts_s">
+                            <a class="avttt" href="#"><img src="./img/list_friend/halinh.jpg" alt=""></a>
+                            <div class="title_cmts">
+                                <a href="#">Nguyễn Khánh Hân
+                                    <i id="-_-" class="fas fa-ellipsis-h"></i>
+                                </a>
+                                <span>dạ <3</span>
+                            </div>
+                        </div>
+                        <div class="cmts_e"> 
+                            <button class="btn_cmts">Thích
+                                <ul class="animationEmoji">
+                                    <!-- like -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--like">
+                                            <div class="emoji__hand">
+                                                <div class="emoji__thumb"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- love -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--love">
+                                            <div class="emoji__heart"></div>
+                                        </div>
+                                    </li>
+                                    <!-- haha -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--haha">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth">
+                                                    <div class="emoji__tongue"></div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </li>
+                                    <!-- thuong -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--yay">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- wow -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--wow">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- buon -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--sad">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- phan no -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--angry">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </button>
+                            <button class="btn_cmts">Trả Lời</button>
+                            <span>16 giờ</span>
+                        </div>
+                    </div>
+                    <div class="cmts">
+                        <div class="cmts_s">
+                            <a class="avttt" href="#"><img src="./img/list_friend/quocdan.jpg" alt=""></a>
+                            <div class="title_cmts">
+                                <a href="#">Hằng Đàm
+                                    <i id="-_-" class="fas fa-ellipsis-h"></i>
+                                </a>
+                                <span> <3</span>
+                            </div>
+                        </div>
+                        <div class="cmts_e"> 
+                            <button class="btn_cmts">Thích
+                                <ul class="animationEmoji">
+                                    <!-- like -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--like">
+                                            <div class="emoji__hand">
+                                                <div class="emoji__thumb"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- love -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--love">
+                                            <div class="emoji__heart"></div>
+                                        </div>
+                                    </li>
+                                    <!-- haha -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--haha">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth">
+                                                    <div class="emoji__tongue"></div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </li>
+                                    <!-- thuong -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--yay">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- wow -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--wow">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- buon -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--sad">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- phan no -->
+                                    <li class="list_aniEmoji">
+                                        <div class="Emojis  emoji--angry">
+                                            <div class="emoji__face">
+                                                <div class="emoji__eyebrows"></div>
+                                                <div class="emoji__eyes"></div>
+                                                <div class="emoji__mouth"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </button>
+                            <button class="btn_cmts">Trả Lời</button>
+                            <span>16 giờ</span>
+                        </div>
+                    </div>
+                    <!-- /footer cmt/ -->
+                    <div class="ft_cmt">
+                        <button class="cmt_ft--cmt">Xem thêm bình luận</button>
+                        <span>26,8K/631,1K</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <!-- right -->
+        <div class="main_right">
+            <!-- hapy birday -->
+            <div class="nav_right">
+                <div class="top_nav">
+                    <div class="_sn-">
+                        <i id="sn" class="fas fa-gift"></i>
+                        <h2 class="name_sn">Sinh Nhật</h2>
+                        <i id="close_right" class="fas fa-times"></i>
+                    </div>
+                    <a class="link_sn" href="#">hôm nay là sinh nhật của <b>Vũ Phạm Hoàng Ly</b>và <b>5 người khác</b></a>
+                </div>
+            </div>
+
+            <!-- add friend -->
+            <div class="addfriend_nav">
+                <div class="box_friend">
+                    <i id="color_5" class="fas fa-user-friends"></i>
+                    <h5>Lời mời kết bạn</h5>
+                    <i id="other" class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="add_prof">
+                    <img src="./img/list_friend/tranthuhien.jpg" alt="">
+                    <div class="list__prof">
+                        <div class="list__prof--title">
+                            <h6>Nguyễn Hà Linh</h6>
+                            <span>16 giờ trước</span>
+                        </div>
+                        <button class="btn btn_add">Xác nhận</button>
+                        <button class="btn btn_remove">Xóa</button>
+                    </div>
+                </div>
+            </div>
+            <div class="boder_"></div>
+            <!-- fanpage -->
+            <div class="fanpage">
+                <!-- nav page -->
+                <div class="page_nav">
+                    <h2 class="name_page">Trang của bạn</h2>
+                    <i id="icon_page" class="fas fa-ellipsis-h"></i>
+                </div>
+                <!-- list page -->
+                <ul class="list_page">
+                    <li class="_list_">
+                        <img src="./img/logo/Logo.jpg" alt="">
+                        <a class="page_Name" href="#">Gnouvbook</a>
+                        <i id="verifi" class="fas fa-check-circle"></i>
+                    </li>
+
+                    <li class="_list_ -_3p">
+                        <i id="icons_page-list" class="fas fa-comments color_8"></i>
+                        <a class="page_Name1" href="#">99+ tin nhắn</a>
+                    </li>
+
+                    <li class="_list_ -_3p">
+                        <i id="icons_page-list" class="fas fa-bell color_9"></i>
+                        <a class="page_Name2" href="#">99+ thông báo</a>
+                    </li>
+
+                    <li class="_list_ -_3p">
+                        <i id="icons_page-list" class="fas fa-bullhorn color_10"></i>
+                        <a class="page_Name3" href="#">Tạo quảng cáo</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- friend liên hệ -->
+            <div class="list_friend">
+                <!-- nav -->
+                <div class="nav_list-friend">
+                    <h4 class="title__nav">Người liên hệ</h4>
+                    <i id="fr_1" class="fas fa-search"></i>
+                    <i id="fr_2" class="fas fa-ellipsis-h"></i>
+                </div>
+                <!-- list -->
+                <ul class="list_-friend_">
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img class="str" src="./img/avt/avatar.jpg" alt="friend">
+                            <span>Nguyễn Thị Khánh Linh</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/ailinh.jpg" alt="friend">
+                            <span>Huỳnh Thị Ái Linh</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img class="str" src="./img/list_friend/khanhhuyen.jpg" alt="friend">
+                            <span>Lê Khánh Huyền</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/minhthu.jpg" alt="friend">
+                            <span>Minh Thu</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img class="str" src="./img/list_friend/thuythuy.jpg" alt="friend">
+                            <span>Thùy Thùy</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img class="str" src="./img/list_friend/nhi.jpg" alt="friend">
+                            <span>Ngọc Nhi</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img class="str" src="./img/list_friend/ngocmy.jpg" alt="friend">
+                            <span>Đặng Nguyên Ngọc Mỹ</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/quyentran.jpg" alt="friend">
+                            <span>Quyên Trần</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/tranthuhien.jpg" alt="friend">
+                            <span>Trần Thu Hiền</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/myngoc.jpg" alt="friend">
+                            <span>Mỹ Ngọc</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/asss.jpg" alt="friend">
+                            <span>Thanh Ân</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp online">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/gai.jpg" alt="friend">
+                            <span>Kiều Nhi</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp ">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/quocdan.jpg" alt="friend">
+                            <span>Huỳnh Phương Linh</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp ">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/halinh.jpg" alt="friend">
+                            <span>Trần Thị Thanh Vy</span>
+                        </a>
+                    </li>
+
+                    <li class="friend_acp ">
+                        <a class="fr_acc" href="#">
+                            <img src="./img/list_friend/oanh.jpg" alt="friend">
+                            <span>Lê Trần Thanh Thảo</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- mess group -->
+            <div class="mess_group">
+
+                <h3 class="mess_group-title">Cuộc trò chuyện nhóm</h3>
+
+                <ul class="mess_group-list">
+                    <li class="mess_group-list__gr">
+                        <img src="./img/list_friend/nhi.jpg" alt="">
+                        <span>Mấy Con Chó</span>
+                    </li>
+                    <li class="mess_group-list__gr">
+                        <img src="./img/avt/avatar.jpg" alt="">
+                        <span>Ít nói lại thể hiện thôi</span>
+                    </li>
+                    <li class="mess_group-list__gr">
+                        <i id="list__gr-icon" class="fas fa-plus"></i>
+                        <span>Tạo nhóm mới</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </main>
+    <!-- footer -->
+    <footer>
+        <i class="far fa-edit"></i>
+    </footer>
+
+    <script src="./js/toggle-theme.js"></script>
+</body>
+</html>

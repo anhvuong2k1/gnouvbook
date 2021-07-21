@@ -1,0 +1,84 @@
+:root {
+    --BgrBlack: #14161afd;
+    --BgrWhite: #e4e4e4aa;
+    --Nav-color: #fff;
+    --ColorIcons: #999;
+    --hover-color: #f3f3f3;
+    --notiColor: #54a0ff;
+    --btn-color: #4b96f1;
+    --hover-main: rgb(223, 222, 222);
+    --str-color: #3d85da;
+    --color-dark-hover: rgb(88, 88, 88);
+    --color-font: #ebebebee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: inherit;
+}
+
+body {
+    background: var(--BgrWhite);
+}
+
+.grid {
+    width: 1707px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 7px;
+}
+
+/* animation */
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.wait {
+    font-size: 13px;
+    padding: 3px 6px;
+    background: #ef5e5e;
+    color: #fff;
+    border-radius: 12px;
+    position: absolute;
+}
+
+#mess_check {
+    position: absolute;
+    font-size: 18px;
+    color: #bababa;
+    margin: -7px 0 -7px 0;
+    right: 15px;
+}
+
+.time_mess {
+    font-size: 13px;
+    position: absolute;
+    color: #999;
+    margin: 3px 0 0 5px;
+}
+
+/* body mid */
+
+.body_mid {
+    top: 387px;
+    position: absolute;
+    width: 96%;
+    left: 19px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}

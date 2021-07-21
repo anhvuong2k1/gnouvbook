@@ -1,0 +1,408 @@
+/* dark or light theme */
+
+body.dark {
+    background: var(--BgrBlack);
+}
+
+body.dark .header_nav {
+    background: #333;
+}
+
+body.dark .search,
+body.dark .search_mess {
+    background: rgb(77, 77, 77);
+}
+
+body.dark input[type="text"] {
+    color: rgb(238, 238, 238);
+}
+
+body.dark .menu li:hover,
+body.dark .account:hover,
+body.dark .tab li:hover {
+    background: var(--color-dark-hover);
+}
+
+/* dark noti */
+body.dark .noti1 {
+    background: #333;
+}
+
+body.dark .noti1 .p1,
+body.dark .noti1 .n1,
+body.dark .noti1 ul li a .list_noti {
+    color: var(--color-font);
+}
+/* ----------------- */
+
+/* dark setting */
+body.dark .setting {
+    background: #333;
+}
+
+body.dark .setting_profile:hover,
+body.dark .feedback:hover,
+body.dark .list_setting:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .hr {
+    border: 1px solid rgb(150, 150, 150);
+}
+
+body.dark .name-setting,
+body.dark .help-setting,
+body.dark .list_setting p {
+    color: var(--color-font);
+}
+/* -=---------------- */
+
+body.dark .profile .account .name {
+    color: var(--color-font);
+}
+
+/* mess */
+body.dark .messenger,
+body.dark .list_tab1::after,
+body.dark .list_tab1::before {
+    background: #333;
+}
+
+body.dark .list_tab1::after {
+    color: #0984e3;
+}
+
+body.dark .messenger .nav_mess p {
+    color: var(--color-font);
+}
+
+body.dark .wait_mess  {
+    background: rgb(37, 37, 37);
+}
+
+body.dark ._noti-wait p {
+    color: var(--color-font);
+}
+
+body.dark .name_mess-p {
+    color: var(--color-font);
+}
+
+/* left main dark */
+
+body.dark ._left .list_left .list__icons:hover,
+body.dark .footer_left .list_footer-left:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark ._left .list_left .list__icons .ic1,
+body.dark .left_ft div h1,
+body.dark .footer_left li p,
+body.dark .main_left div .sup  {
+    color: var(--color-font);
+}
+
+body.dark .main_left div .sup:hover {
+    color: #9c9c9cee;
+}
+
+body.dark ._left,
+body.dark .nav_right,
+body.dark .fanpage,
+body.dark .post .stt {
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+body.dark ._left .list_left .list__icons .ic1 #edit2 {
+    color: #000;
+}
+
+/* right main */
+body.dark .nav_right .top_nav {
+    background: rgb(59, 59, 59);
+}
+
+body.dark .main_right .nav_right .top_nav .name_sn,
+body.dark .main_right .nav_right .top_nav .link_sn  {
+    color: var(--color-font);
+}
+
+body.dark #close_right {
+    color: var(--color-font);
+}
+
+body.dark .nav_right .top_nav ._sn- #close_right:hover {
+    background: var(--color-dark-hover);
+}
+
+/* page */
+
+body.dark .fanpage .page_nav h2 {
+    color: var(--color-font);
+}
+
+body.dark .fanpage .page_nav #icon_page {
+    color: var(--color-font);
+}
+
+body.dark .fanpage .page_nav #icon_page:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .list_page ._list_:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .list_page ._list_ a {
+    color: var(--color-font);
+}
+
+/* list friend dark */
+body.dark .nav_list-friend .title__nav {
+    color: var(--color-font);
+}
+
+body.dark .nav_list-friend #fr_1,
+body.dark .nav_list-friend #fr_2 {
+    color: var(--color-font);
+}
+
+body.dark .list_friend .nav_list-friend #fr_1:hover,
+body.dark .list_friend .nav_list-friend #fr_2:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .list_friend .list_-friend_ .friend_acp:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .list_friend .list_-friend_ .friend_acp a {
+    color: var(--color-font);
+}
+
+/* mess group */
+body.dark .mess_group {
+    border-top: 1px solid rgb(150, 150, 150);
+}
+
+body.dark .mess_group .mess_group-title {
+    color: var(--color-font);
+}
+
+body.dark .mess_group .mess_group-list .mess_group-list__gr span {
+    color: var(--color-font);
+}
+
+body.dark .mess_group .mess_group-list .mess_group-list__gr:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .mess_group .mess_group-list .mess_group-list__gr #list__gr-icon,
+body.dark ._left .list_left .list__icons .ic1 #edit2 {
+    background: #333;
+}
+/* add friend */
+body.dark .addfriend_nav {
+    background: rgb(59, 59, 59);
+}
+
+body.dark .addfriend_nav .box_friend h5,
+body.dark .addfriend_nav .box_friend #other {
+    color: var(--color-font);
+}
+
+body.dark .addfriend_nav .box_friend #other:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .addfriend_nav .add_prof:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .addfriend_nav .add_prof .list__prof .list__prof--title h6 {
+    color: var(--color-font);
+}
+
+/* main mid dark */
+body.dark .main_mid .next_story i {
+    background: var(--color-dark-hover);
+    color: var(--color-font);
+}
+
+body.dark .story .list_story .add__1 {
+    color: var(--color-font);
+    background: #333;
+}
+
+body.dark .story .list_story #add_str {
+    background: #333;
+}
+
+body.dark .post {
+    background: rgb(59, 59, 59);
+}
+
+body.dark .post .stt div {
+    background: rgb(77, 77, 77);
+}
+
+body.dark .post .btn_post .button_list span {
+    color: var(--color-font);
+}
+
+body.dark .post .btn_post .button_list:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .bodys {
+    background: rgb(59, 59, 59);
+}
+
+body.dark .Posts .list_post-nav .post_nav-title div a,
+body.dark .Posts .list_post-nav .post_nav-title div span,
+body.dark .Posts .stt_title-posts {
+    color: var(--color-font);
+}
+
+body.dark .Posts .list_post-nav #other {
+    color: var(--color-font);
+}
+
+body.dark .Posts .list_post-nav #other:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .emoji_post .emoji__list #likes,
+body.dark .emoji_post .emoji__list #haha,
+body.dark .emoji_post .emoji__list #sad {
+    border: 2px solid rgb(59, 59, 59);
+}
+
+body.dark .emoji_post .react {
+    color: var(--color-font);
+}
+
+body.dark .emoji_post {
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+body.dark .Posts .__react-emj {
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+body.dark .__react-emj .ws {
+    color: var(--color-font);
+}
+
+body.dark .__react-emj .ws:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .__react-emj .ws .animationEmoji {
+    background: var(--color-dark-hover);
+}
+
+body.dark #click_option {
+    color: var(--color-font);
+}
+
+body.dark #click_option option {
+    color: #333;
+}
+
+body.dark .comment .comment_list .cmt_list--list {
+    background: rgb(77, 77, 77);
+}
+
+body.dark .comment .comment_list .cmt_list--list .list--list_icons i:hover {
+    background: var(--color-dark-hover);
+}
+
+body.dark .cmts .cmts_s .title_cmts {
+    background: rgb(77, 77, 77);
+}
+
+body.dark .cmts .cmts_s .title_cmts a {
+    color: var(--color-font);
+}
+
+body.dark .cmts .cmts_s .title_cmts a #-_- {
+    color: var(--color-font);
+}
+
+body.dark .cmts .cmts_s .title_cmts a #-_-:hover {
+    color: rgb(180, 180, 180);
+}
+
+body.dark .cmts .cmts_s .title_cmts span {
+    color: var(--color-font);
+}
+
+body.dark .cmts .cmts_e .btn_cmts {
+    color: var(--color-font);
+}
+
+body.dark .cmts .cmts_e span {
+    color: rgba(255, 255, 255, 0.479);
+}
+
+body.dark .cmts .cmts_e .btn_cmts .animationEmoji {
+    background: var(--color-dark-hover);
+}
+
+body.dark .Posts .ft_cmt .cmt_ft--cmt,
+body.dark .Posts .ft_cmt span {
+    color: var(--color-font);
+}
+
+body.dark footer i {
+    background: var(--color-dark-hover);
+    color: var(--color-font);
+}
+/* -------------------------------------------- */
+.Lable {
+    background: #40739e;
+    position: absolute;
+    right: 79px;
+    border-radius: 30px;
+    width: 19%;
+    height: 33px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: scale(1.5s);
+}
+
+.Moon {
+    color: #f9ca24;
+    margin-left: 7px;
+}
+
+.fa-sun {
+    color: #f0932b;
+    margin-right: 6px;
+}
+
+.ball {
+    background: #ffffff;
+    width: 30px;
+    height: 29px;
+    left: 3px;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.2s linear;
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox:checked + .Lable .ball {
+    transform: translateX(34px);
+}
+
+.checkbox:checked + .Lable {
+    background-color: rgba(3, 3, 3, 0.678);
+}
